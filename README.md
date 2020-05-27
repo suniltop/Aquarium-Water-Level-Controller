@@ -11,3 +11,7 @@ PCB picture saved from KiCAD with Raytracing
 <p align="center">
   <img src="WaterLevelController_V1.jpg" width="760" title="PCB Picture">
 </p>
+
+- Green Led: Everything is fine.
+- Yellow Led: Water pump is runnning so, filling aquarium tank or sump tank.
+- Red Led: Refill tank is empty.
