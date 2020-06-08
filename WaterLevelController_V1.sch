@@ -75,36 +75,26 @@ Wire Wire Line
 $Comp
 L Connector:Screw_Terminal_01x02 J1
 U 1 1 5E3229DC
-P 7050 1850
-F 0 "J1" H 7050 2050 50  0000 C CNN
-F 1 "Screw_Terminal_01x02" H 7050 1950 50  0001 C CNN
-F 2 "Connectors_Phoenix:PhoenixContact_MC-G_02x3.81mm_Angled" H 7050 1850 50  0001 C CNN
-F 3 "~" H 7050 1850 50  0001 C CNN
-F 4 "+12V" H 7050 1950 50  0000 C CNN "Description"
-	1    7050 1850
+P 6550 1850
+F 0 "J1" H 6550 2050 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 6550 1950 50  0001 C CNN
+F 2 "Connectors_Phoenix:PhoenixContact_MC-G_02x3.81mm_Angled" H 6550 1850 50  0001 C CNN
+F 3 "~" H 6550 1850 50  0001 C CNN
+F 4 "+12V" H 6550 1950 50  0000 C CNN "Description"
+	1    6550 1850
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	7300 1850 7300 1650
-Wire Wire Line
-	7300 1650 7350 1650
 $Comp
 L power:GND #PWR0103
 U 1 1 5E323BAC
-P 7300 2150
-F 0 "#PWR0103" H 7300 1900 50  0001 C CNN
-F 1 "GND" H 7305 1977 50  0000 C CNN
-F 2 "" H 7300 2150 50  0001 C CNN
-F 3 "" H 7300 2150 50  0001 C CNN
-	1    7300 2150
+P 6850 2150
+F 0 "#PWR0103" H 6850 1900 50  0001 C CNN
+F 1 "GND" H 6855 1977 50  0000 C CNN
+F 2 "" H 6850 2150 50  0001 C CNN
+F 3 "" H 6850 2150 50  0001 C CNN
+	1    6850 2150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7300 1950 7300 2150
-Wire Wire Line
-	7250 1850 7300 1850
-Wire Wire Line
-	7250 1950 7300 1950
 $Comp
 L power:+12V #PWR0104
 U 1 1 5E324C86
@@ -880,4 +870,27 @@ Wire Wire Line
 Connection ~ 4900 6000
 Wire Wire Line
 	4900 6000 5200 6000
+$Comp
+L Device:Polyfuse F1
+U 1 1 5EDADCE9
+P 7100 1650
+F 0 "F1" V 6875 1650 50  0000 C CNN
+F 1 "MF-R250" V 6966 1650 50  0000 C CNN
+F 2 "Fuse:Fuse_Bourns_MF-R250" H 7150 1450 50  0001 L CNN
+F 3 "~" H 7100 1650 50  0001 C CNN
+	1    7100 1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7350 1650 7250 1650
+Wire Wire Line
+	6950 1650 6850 1650
+Wire Wire Line
+	6850 1650 6850 1850
+Wire Wire Line
+	6850 1850 6750 1850
+Wire Wire Line
+	6750 1950 6850 1950
+Wire Wire Line
+	6850 1950 6850 2150
 $EndSCHEMATC
